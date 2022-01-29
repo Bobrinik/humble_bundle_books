@@ -1,0 +1,77 @@
+{
+  "amount_spent": 22,
+  "product": {
+    "category": "bundle",
+    "machine_name": "cybersecuritywiley2022_bookbundle",
+    "empty_tpkds": {},
+    "post_purchase_text": "",
+    "human_name": "Humble Book Bundle: Cybersecurity by Wiley",
+    "partial_gift_enabled": true
+  },
+  "gamekey": "",
+  "uid": "",
+  "all_coupon_data": null,
+  "created": "2022-01-27T03:23:44.014835",
+  "missed_credit": null,
+  "subproducts": [
+    {
+      "machine_name": "threat_modeling_designing_for_security",
+      "url": "",
+      "downloads": [
+        {
+          "machine_name": "threat_modeling_designing_for_security_ebook",
+          "platform": "ebook",
+          "download_struct": [
+            {
+              "sha1": "",
+              "name": "EPUB",
+              "url": {
+                "web": "some_url",
+                "bittorrent": ""
+              },
+              "human_size": "6.4 MB",
+              "file_size": 6730700,
+              "small": 1,
+              "md5": ""
+            },
+            {
+              "sha1": "",
+              "name": "PDF",
+              "url": {
+                "web": "",
+                "bittorrent": ""
+              },
+              "human_size": "21.7 MB",
+              "file_size": 22762425,
+              "small": 1,
+              "md5": ""
+            }
+          ],
+          "options_dict": {},
+          "download_identifier": null,
+          "download_version_number": null
+        }
+      ],
+      "library_family_name": null,
+      "payee": {
+        "human_name": "Wiley",
+        "machine_name": "wiley"
+      },
+      "human_name": "Threat Modeling: Designing for Security",
+      "custom_download_page_box_css": null,
+      "custom_download_page_box_html": null,
+      "icon": ""
+    }
+ ],
+  "total_choices": 0,
+  "choices_remaining": 0,
+  "currency": "CAD",
+  "is_giftee": false,
+  "has_wallet": false,
+  "claimed": true,
+  "total": 18,
+  "wallet_credit": null,
+  "path_ids": [
+    "5"
+  ]
+}
