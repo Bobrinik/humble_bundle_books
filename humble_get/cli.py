@@ -4,7 +4,6 @@
 import sys
 import click
 from .humble_get import get_page, get_books_to_download, select_format, download_a_book, BookFormat
-from tqdm import tqdm
 
 
 @click.command()
@@ -21,11 +20,15 @@ def main(humble_key, target_path, book_format, dry_run):
     books = get_books_to_download(data)
     books_to_download = [b for b in select_format(books, book_format)]
 
-    for book_to_download in tqdm(books_to_download):
+    n = len(books_to_download)
+    print(f"Books to download: {n}")
+    for book_to_download in books_to_download:
         if dry_run:
             print(f"Book: {book_to_download['book_name']}.{book_to_download['file_format']}")
         else:
             download_a_book(target_path, book_to_download)
+            n = n - 1
+            print(f"Books left to download: {n}  ", end="\r")
     return 0
 
 

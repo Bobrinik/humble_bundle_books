@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 with open('README.md', encoding="utf-8") as readme_file:
     readme = readme_file.read()
 
-requirements = ['Click>=6.0', ]
+requirements = ['Click>=6.0', 'requests', ]
 
 setup_requirements = ['pytest-runner', ]
 
@@ -32,11 +32,12 @@ setup(
     include_package_data=True,
     keywords='humble_get',
     name='humble_get',
+    python_requires='>=3.6, <3.10',
     packages=find_packages(include=['humble_get']),
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/bobrinik/humble_get',
-    version='0.1.0',
+    version='0.1.7',
     zip_safe=False,
 )
